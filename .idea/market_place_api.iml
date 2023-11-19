@@ -39,6 +39,7 @@
     <orderEntry type="library" scope="PROVIDED" name="activerecord (v7.0.8, asdf: 3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activestorage (v7.0.8, asdf: 3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v7.0.8, asdf: 3.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.20, asdf: 3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootsnap (v1.17.0, asdf: 3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.4, asdf: 3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v2.4.22, asdf: 3.2.2) [gem]" level="application" />
