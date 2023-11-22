@@ -66,9 +66,13 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+    bcrypt (3.1.20)
     bootsnap (1.17.0)
       msgpack (~> 1.2)
     builder (3.2.4)
+    bullet (7.1.4)
+      activesupport (>= 3.0.0)
+      uniform_notifier (~> 1.11)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
     date (3.3.4)
@@ -76,6 +80,10 @@ GEM
       irb (>= 1.5.0)
       reline (>= 0.3.1)
     erubi (1.12.0)
+    faker (3.2.2)
+      i18n (>= 1.8.11, < 2)
+    fast_jsonapi (1.5)
+      activesupport (>= 4.2)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.1)
@@ -84,6 +92,19 @@ GEM
     irb (1.9.0)
       rdoc
       reline (>= 0.3.8)
+    jwt (2.7.1)
+    kaminari (1.2.2)
+      activesupport (>= 4.1.0)
+      kaminari-actionview (= 1.2.2)
+      kaminari-activerecord (= 1.2.2)
+      kaminari-core (= 1.2.2)
+    kaminari-actionview (1.2.2)
+      actionview
+      kaminari-core (= 1.2.2)
+    kaminari-activerecord (1.2.2)
+      activerecord
+      kaminari-core (= 1.2.2)
+    kaminari-core (1.2.2)
     loofah (2.22.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -115,6 +136,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.7.3)
     rack (2.2.8)
+    rack-cors (2.0.1)
+      rack (>= 2.0.0)
     rack-test (2.1.0)
       rack (>= 1.3)
     rails (7.0.8)
@@ -156,6 +179,7 @@ GEM
     timeout (0.4.1)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    uniform_notifier (1.16.0)
     websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -165,9 +189,16 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  bcrypt (~> 3.1)
   bootsnap
+  bullet (~> 7.1)
   debug
+  faker (~> 3.2)
+  fast_jsonapi (~> 1.5)
+  jwt (~> 2.7)
+  kaminari (~> 1.2)
   puma (~> 5.0)
+  rack-cors (~> 2.0)
   rails (~> 7.0.6)
   sqlite3 (~> 1.4)
   tzinfo-data
